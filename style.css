@@ -1,33 +1,168 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x:hidden;
 }
 
 body {
     font-family: "Roboto", sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
     line-height: 1.7;
+    }
+
+p {
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+
+/* -----------------------------------
+    NAVBAR
+-------------------------------------- */
+.navbar {
+    padding: 0;
+    margin-top: 5px;
+    margin-left: 15px;
+    position: fixed;
+}
+
+
+/* -----------------------------------
+    SIDEBAR
+-------------------------------------- */
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    z-index: 999;
+    background: #443b3b;
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
     padding: 10px;
 }
 
-/* --------Header-----------*/
-
-/* Navbar */
-
-.nav-link {
-    text-transform: uppercase;
-    text-align: left;
-    margin-left: 5px;
-    margin-bottom: -10px;
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
 }
 
+#sidebar ul li a:hover {
+    color: red;
+    background: #fff;
+}
 
-/* Socialmedia Top */
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #695b5b;
+}
 
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #220c0c;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+/* -----------------------------------
+    HEADER
+-------------------------------------- */
+
+.main-header {
+    background-image: url(../img/st-main-mobile.jpg);
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    overflow-y: auto;
+
+}
+/* -----------------------------------
+    SOCIALMEDIA TOP-RIGHT
+-------------------------------------- */
 
 .socialmedialinks-top{
 padding: 16px;
@@ -50,7 +185,7 @@ font-size: 13px;
 line-height: 7px;
 text-align: center;
 color: #fafafa;
-background: #8f8f8f;
+background: #443b3b;
 transition: all 0.35s ease-in-out;
 -moz-transition: all 0.35s ease-in-out;
 -webkit-transition: all 0.35s ease-in-out;
@@ -58,53 +193,101 @@ transition: all 0.35s ease-in-out;
 }
 
 .social-links li a i:hover {
-background: #e84610;
+background: #700000;
 
 }
 
-/* ------------------------------Colors */
 
+/* -----------------------------------
+    MUSIC
+-------------------------------------- */V
 
-/* ------------------------------Special paddings/margins/text */
-
-
-/* ------------------------------Heading */
-.principal {
-    height: 100vh;
-    background-image: url(../img/steventyler2.jpg);     
+#music .container-fluid{
+    height: 90vh;;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(../img/bg-music.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
     overflow-y: auto;
-    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    /*clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 85%); */
+
+}
+
+/* -----------------------------------
+    VIDEOS
+-------------------------------------- */
+
+#videos .container-fluid{
+    height: 90vh;
+    background-color: aqua;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: auto;
+    /*clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%); */
+
+}
+/* -----------------------------------
+    PHOTOS
+-------------------------------------- */
+
+#photos .container-fluid{
+    height: 95vh;;
+    background-color: azure;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: auto;
+    /* clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 85%); */
+
+}
+
+/* -----------------------------------
+    FOLLOW
+-------------------------------------- */
+
+#follow .container-fluid{
+    height: 90vh;;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: auto;
+    /*clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%); */
+
+}
+/* -----------------------------------
+    FOOTER
+-------------------------------------- */
+
+
+
+/* -----------------------------------
+    MEDIA QUERY
+-------------------------------------- */
+
+@media(min-width: 768px) {
+.main-header{
+    background-image: url(../img/st-main-large.jpg);     
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    overflow-y: auto;    
+    /*clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%); */
+}
+    .navbar {
+        padding: 0 10px;
+        margin-top: 15px;
+        margin-left: 15px;
+        position: fixed;
+    
+    }
+}
+
+@media (min-width: 1328px) {
+    .main-header {
+        background-image: url(../img/st-main-xlarge.jpg);
+        background-size: cover;
     }
 
-/* ------------------------------Footer */
-
-
-
-/* ------------------------------Music */
-
-.container-music{
-    height: 95vh;;
-    padding: 300px;
-    background-color:blue;
-    background-size: cover;
-    overflow-y: auto;
 }
 
-/* ------------------------------Videos */
-
-/* ------------------------------Photos */
-
-/* ------------------------------Follow */
-
-
-/* ------------------------------Media Queries*/
-
-@media(max-width: 550px) {
-.right-top-header {
-display: none;
+@media (max-width: 580px) {
+    .right-top-header {
+        display:none;
+    }
 }
-}
-
-
