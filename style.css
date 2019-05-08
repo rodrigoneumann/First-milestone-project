@@ -144,7 +144,7 @@ a.article:hover {
 -------------------------------------- */
 
 .main-header {
-    background-image: url(../img/st-main-mobile.jpg);
+    background-image: url(../assets/images/st-main-mobile.jpg);
     height: 75vh;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -223,7 +223,7 @@ a.article:hover {
 -------------------------------------- */
 
 .music-main {
-    background-image: url(../img/bg-music-mobile.jpg);
+    background-image: url(../assets/images/bg-music-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -348,7 +348,7 @@ img {
 
 @media (min-width: 576px) {
     #music .container-fluid {
-        background-image: url(../img/bg-music-xlg.jpg);
+        background-image: url(../assets/images/bg-music-xlg.jpg);
         background-repeat: no-repeat;
         background-position-x: center;
         background-size: cover;
@@ -374,7 +374,7 @@ img {
 
 @media(min-width: 768px) {
     .main-header {
-        background-image: url(../img/st-main-large.jpg);
+        background-image: url(../assets/images/st-main-large.jpg);
         background-repeat: no-repeat;
         background-position-x: center;
         background-size: cover;
@@ -426,7 +426,7 @@ img {
     .main-header {
         height: 100vh;
         width: 100vw;
-        background-image: url(../img/st-main-xlarge.jpg);
+        background-image: url(../assets/images/st-main-xlarge.jpg);
         background-size: cover;
     }
 
