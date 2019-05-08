@@ -9,142 +9,179 @@
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         type="text/css" />
-     <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <!-- Font Awesome JS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- My own style sheet -->
     <link rel="stylesheet" href="style.css" type="text/css" />
-    
+
 </head>
 
 <body>
 
     <header class="main-header">
-        <div class="row no-gutter">
+        <div class="row">
 
-<!-- Sidebar  -->
+            <!-- Sidebar -- code used by : https://bootstrapious.com/tutorial/sidebar/index3.html -->
             <nav id="sidebar">
-                    <ul class="list-unstyled components">
-                        <li class="active">
+                <ul class="components">
+                    <li class="active">
                         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">Music</a>
-                        </li>
-                        <li>
-                            <a href="#">Video</a>
-                        </li>
-                        <li>
-                            <a href="#">Photos</a>
-                        </li>
-                        <li>
-                            <a href="#">Follow</a>
-                        </li>
-                    </ul>
-                </nav>
-<!-- Navbar -->                
-                        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-                        <div class="container-fluid">
-                            <button type="button" id="sidebarCollapse" class="btn">
-                                    <i class="fas fa-chevron-circle-right fa-2x"></i>
-                            </button>
-                        
-                </nav>
-                </div>
+                    </li>
+                    <li>
+                        <a href="#">Music</a>
+                    </li>
+                    <li>
+                        <a href="#">Video</a>
+                    </li>
+                    <li>
+                        <a href="#">Photos</a>
+                    </li>
+                    <li>
+                        <a href="#">Follow</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Navbar -- code used by : https://bootstrapious.com/tutorial/sidebar/index3.html-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <i class="fas fa-chevron-circle-right fa-2x"></i>
+                    </button>
 
-                <div class="overlay"></div>
+            </nav>
+        </div>
 
-<!--. SOCIAL MEDIA LINKS TOP RIGHT-->
-            <div class="right-top-header col-7 ml-auto">
-                <div class="socialmedialinks-top col-12 d-flex flex-row-reverse">
-                    <ul class="list-inline social-links">
-                        <li class="list-inline-item">
-                            <a target="_blank" href="#">
-                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                                <span class="sr-only">Facebook</span>
-                            </a>
-                        </li>
+        <div class="overlay"></div>
 
-                        <li class="list-inline-item">
-                            <a target="_blank" href="#">
-                                <i class="fab fa-twitter" aria-hidden="true"></i>
-                                <span class="sr-only">Twitter</span>
-                            </a>
-                        </li>
+        <!--. SOCIAL MEDIA LINKS TOP RIGHT -- code by Full stack Diploma "ROSIE CV" Classes -->
+        <div class="right-top-header col-7 ml-auto">
+            <div class="socialmedialinks-top col-12 d-flex flex-row-reverse">
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
 
-                        <li class="list-inline-item">
-                            <a target="_blank" href="#">
-                                <i class="fab fa-linkedin" aria-hidden="true"></i>
-                                <span class="sr-only">LinkedIn</span>
-                            </a>
-                        </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
 
-                        <li class="list-inline-item">
-                            <a target="_blank" href="#">
-                                <i class="fab fa-pinterest" aria-hidden="true"></i>
-                                <span class="sr-only">Pinterest</span>
-                            </a>
-                        </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                    </li>
 
-                        <li class="list-inline-item">
-                            <a target="_blank" href="#">
-                                <i class="fab fa-instagram" aria-hidden="true"></i>
-                                <span class="sr-only">Instagram</span>
-                            </a>
-                        </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fab fa-pinterest" aria-hidden="true"></i>
+                            <span class="sr-only">Pinterest</span>
+                        </a>
+                    </li>
 
-                        <li class="list-inline-item">
-                            <a target="_blank" href="#">
-                                <i class="fab fa-youtube" aria-hidden="true"></i>
-                                <span class="sr-only">Youtube</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">Youtube</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-</header>
+        </div>
 
-    <section id="music">
+        <div class="header-name">
+            <div class="container">
+                <h1 class=>Steven Tyler</h1>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="music-main" id="music">
         <div class="container-fluid">
             <div class="row">
-                    <div class="col-lg-12">
-                            <h1>Music</h1>
-                            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                    </div>
+                <div class="col-lg-12 music-top">
+                    <h1>Music</h1>
+                </div>
             </div>
+
+            <div class="jumbotron">
+
+                <div class="col-xs-6 col-sm-5 music-players">
+                    <div class="spotify">
+                        <img src="../img/spotify.png" alt="Spotify">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-5 music-players">
+                    <div class="youtube-music">
+                        <img src="../img/youtube-music-logo.png" alt="Youtube Music">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-5 music-players">
+                    <div class="amazon-music">
+                        <img src="../img/amazon-music.png" alt="Amazon Music">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-5 music-players">
+                    <div class="apple-music">
+                        <img src="../img/applemusic.png" alt="Apple Music">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
         </div>
     </section>
 
     <section id="videos">
-            <div class="container-fluid">
-                    <div class="row">
-                            <div class="col-lg-12">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
 
-                <h1>Videos</h1>           
-                    </div>
+                    <h1>Videos</h1>
                 </div>
+            </div>
     </section>
 
     <section id="photos">
-            <div class="container-fluid">
-                    <div class="row">
-                            <div class="col-lg-12">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
 
-                            <h1>Photos</h1>                
-                    </div>
+                    <h1>Photos</h1>
                 </div>
-        </section>
+            </div>
+    </section>
 
-        <section id="follow">
-                <div class="container-fluid">
-                        <div class="row">
-                                <div class="col-lg-12">
+    <section id="follow">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
 
-                                <h1>Follow</h1>         
-                        </div>
-                    </div>
-            </section>
+                    <h1>Follow</h1>
+                </div>
+            </div>
+    </section>
+
+
     <footer>
 
     </footer>
@@ -163,7 +200,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous ">
     </script>
     <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
     </script>
     <!-- Sidebar JS-->
     <script type="text/javascript">

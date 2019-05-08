@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Great Vibes:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
     font-size: 1em;
     font-weight: 400;
     line-height: 1.7;
-    }
+}
 
 p {
     font-size: 1.1em;
@@ -32,18 +32,21 @@ a:focus {
 
 
 /* -----------------------------------
-    NAVBAR
+    NAVBAR 
+    code model by : https://bootstrapious.com/tutorial/sidebar/index3.html                               
 -------------------------------------- */
 .navbar {
     padding: 0;
     margin-top: 5px;
-    margin-left: 15px;
+    margin-left: 12px;
     position: fixed;
+    z-index: 998;
 }
 
 
 /* -----------------------------------
-    SIDEBAR
+    SIDEBAR              
+    code model by : https://bootstrapious.com/tutorial/sidebar/index3.html               
 -------------------------------------- */
 
 #sidebar {
@@ -74,6 +77,7 @@ a:focus {
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
+
 .overlay.active {
     display: block;
     opacity: 1;
@@ -86,7 +90,6 @@ a:focus {
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
 }
 
 #sidebar ul p {
@@ -95,13 +98,14 @@ a:focus {
 }
 
 #sidebar ul li a {
+    text-align: center;
     padding: 10px;
     font-size: 1.1em;
     display: block;
 }
 
 #sidebar ul li a:hover {
-    color: red;
+    color: #700000;
     background: #fff;
 }
 
@@ -129,18 +133,6 @@ ul ul a {
     background: #220c0c;
 }
 
-ul.CTAs {
-    padding: 20px;
-}
-
-ul.CTAs a {
-    text-align: center;
-    font-size: 0.9em !important;
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-
 a.article,
 a.article:hover {
     background: #6d7fcc !important;
@@ -160,76 +152,168 @@ a.article:hover {
     overflow-y: auto;
 
 }
+
+.header-name {
+    display: flex;
+    height: 100%;
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
+
+}
+
+.main-header .container {
+    height: 120px;
+}
+
+.header-name h1 {
+    font-family: "Great Vibes", sans-serif;
+    font-size: 4rem;
+    line-height: 1.2;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px #c0b0b0;
+    text-decoration: none;
+    color: #700000;
+    text-align: center;
+    padding-top: 15px;
+    margin: 0;
+    height: 120px;
+}
+
 /* -----------------------------------
     SOCIALMEDIA TOP-RIGHT
 -------------------------------------- */
 
-.socialmedialinks-top{
-padding: 16px;
-margin: 0;
-position: relative;
-text-align: right;
+.socialmedialinks-top {
+    padding: 16px;
+    margin: 0;
+    position: relative;
+    text-align: right;
 
 }
 
-.social-links{
-margin: 0;
+.social-links {
+    margin: 0;
 }
 
 .social-links li a i {
-width: 32px;
-height: 32px;
-padding: 12px 0;
-border-radius: 50px;
-font-size: 13px;
-line-height: 7px;
-text-align: center;
-color: #fafafa;
-background: #443b3b;
-transition: all 0.35s ease-in-out;
--moz-transition: all 0.35s ease-in-out;
--webkit-transition: all 0.35s ease-in-out;
--o-transition: all 0.35s ease-in-out;
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50px;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #443b3b;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
 }
 
 .social-links li a i:hover {
-background: #700000;
+    background: #700000;
 
 }
 
 
 /* -----------------------------------
     MUSIC
--------------------------------------- */V
+-------------------------------------- */
 
-#music .container-fluid{
-    height: 90vh;;
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(../img/bg-music.jpg);
+.music-main {
+    background-image: url(../img/bg-music-mobile.jpg);
     background-repeat: no-repeat;
-    overflow-y: auto;
-    /*clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 85%); */
+    background-position: center;
+    background-size: cover;
+}
+
+#music .container-fluid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.music-top {
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-bottom: 3vh;
 
 }
+
+.music-top h1 {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.music-players {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 3.5vh;
+    padding: 0;
+
+}
+
+.spotify,
+.apple-music,
+.youtube-music,
+.amazon-music {
+    padding: 10px;
+}
+
+.spotify,
+.apple-music,
+.youtube-music,
+.amazon-music,
+img {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    display: block;
+    filter: grayscale(1);
+    transition: 0.5s ease-in-out;
+
+}
+
+.spotify:hover,
+.apple-music:hover,
+.youtube-music:hover,
+.amazon-music:hover,
+img {
+    filter: grayscale(0);
+    transition: 0.3s ease-in-out;
+
+}
+
+#music .jumbotron {
+    background-color: transparent;
+    margin-bottom: 0;
+    padding-bottom: 5vh;
+}
+
 
 /* -----------------------------------
     VIDEOS
 -------------------------------------- */
 
-#videos .container-fluid{
-    height: 90vh;
+#videos .container-fluid {
+    height: 75vh;
     background-color: aqua;
     background-size: cover;
     background-repeat: no-repeat;
     overflow-y: auto;
-    /*clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%); */
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
 
 }
+
 /* -----------------------------------
     PHOTOS
 -------------------------------------- */
 
-#photos .container-fluid{
-    height: 95vh;;
+#photos .container-fluid {
+    height: 75vh;
     background-color: azure;
     background-size: cover;
     background-repeat: no-repeat;
@@ -242,14 +326,16 @@ background: #700000;
     FOLLOW
 -------------------------------------- */
 
-#follow .container-fluid{
-    height: 90vh;;
+#follow .container-fluid {
+    height: 75vh;
+    ;
     background-size: cover;
     background-repeat: no-repeat;
     overflow-y: auto;
     /*clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%); */
 
 }
+
 /* -----------------------------------
     FOOTER
 -------------------------------------- */
@@ -260,27 +346,11 @@ background: #700000;
     MEDIA QUERY
 -------------------------------------- */
 
-@media(min-width: 768px) {
-.main-header{
-    background-image: url(../img/st-main-large.jpg);     
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-size: cover;
-    overflow-y: auto;    
-    /*clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%); */
-}
-    .navbar {
-        padding: 0 10px;
-        margin-top: 15px;
-        margin-left: 15px;
-        position: fixed;
-    
-    }
-}
-
-@media (min-width: 1328px) {
-    .main-header {
-        background-image: url(../img/st-main-xlarge.jpg);
+@media (min-width: 576px) {
+    #music .container-fluid {
+        background-image: url(../img/bg-music-xlg.jpg);
+        background-repeat: no-repeat;
+        background-position-x: center;
         background-size: cover;
     }
 
@@ -288,6 +358,83 @@ background: #700000;
 
 @media (max-width: 580px) {
     .right-top-header {
-        display:none;
+        display: none;
+    }
+}
+
+@media (min-width: 581px) {
+    .header-name {
+        height: 85%;
+    }
+
+    .header-name h1 {
+        font-size: 5rem;
+    }
+}
+
+@media(min-width: 768px) {
+    .main-header {
+        background-image: url(../img/st-main-large.jpg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-size: cover;
+        overflow-y: auto;
+
+    }
+
+    .navbar {
+        padding: 0 10px;
+        margin-top: 15px;
+        margin-left: 15px;
+        position: fixed;
+
+    }
+
+    .header-name {
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        margin-top: 100px;
+        width: 50%;
+
+    }
+
+    .main-header .container {
+        height: 200px;
+        padding-top: 13px;
+        background-color: transparent;
+        overflow: hidden;
+    }
+
+    .header-name h1 {
+        text-align: center;
+        padding-right: 30px;
+        text-shadow: none;
+        height: 150px;
+
+    }
+
+}
+
+@media(max-width: 925px) {
+    .header-name h1 {
+        font-size: 4.5rem;
+    }
+}
+
+@media (min-width: 1328px) {
+    .main-header {
+        height: 100vh;
+        width: 100vw;
+        background-image: url(../img/st-main-xlarge.jpg);
+        background-size: cover;
+    }
+
+    .header-name h1 {
+        text-align: left;
+        padding-left: 20%;
+        margin: 0;
+        padding-right: 30px;
+        font-size: 6.5rem;
     }
 }
