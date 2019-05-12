@@ -153,32 +153,30 @@ a.article:hover {
 
 }
 
+
 .header-name {
     display: flex;
-    height: 100%;
+    height: 95%;
     flex-direction: column-reverse;
-    margin: 0;
+    margin: 1vh 0 0 0;
     padding: 0;
 
 }
 
-.main-header .container {
-    height: 120px;
-}
-
 .header-name h1 {
-    font-family: "Great Vibes", sans-serif;
-    font-size: 4rem;
-    line-height: 1.2;
-    font-weight: 800;
-    text-shadow: 1px 1px 1px #c0b0b0;
+    font-family: "Roboto", sans-serif;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 2.8rem;
+    border-radius: 5px;
+    font-weight: 400;
+    text-shadow: 2px 2px 5px #000;
     text-decoration: none;
-    color: #700000;
+    text-transform: uppercase;
+    color: #fafafa;
     text-align: center;
-    padding-top: 15px;
-    margin: 0;
-    height: 120px;
-}
+
+    
+    }
 
 /* -----------------------------------
     SOCIALMEDIA TOP-RIGHT
@@ -227,19 +225,12 @@ a.article:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-#music .container-fluid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: 75vh;
 }
 
 .music-top {
     margin-top: 30px;
     margin-left: 15px;
-    margin-bottom: 3vh;
-
 }
 
 .music-top h1 {
@@ -248,19 +239,14 @@ a.article:hover {
     text-transform: uppercase;
 }
 
-.music-players {
-    height: 100%;
-    width: 100%;
-    margin-bottom: 3.5vh;
-    padding: 0;
-
+.apple-music {
+    padding: 6vh 0 1vh 0;
 }
 
 .spotify,
-.apple-music,
 .youtube-music,
 .amazon-music {
-    padding: 10px;
+    padding: 4vh 0 1vh 0;  
 }
 
 .spotify,
@@ -268,14 +254,13 @@ a.article:hover {
 .youtube-music,
 .amazon-music,
 img {
-    width: 80%;
-    height: 80%;
-    margin: 0 auto;
-    display: block;
+    max-width: 100%;
     filter: grayscale(1);
     transition: 0.5s ease-in-out;
 
 }
+
+
 
 .spotify:hover,
 .apple-music:hover,
@@ -285,13 +270,10 @@ img {
     filter: grayscale(0);
     transition: 0.3s ease-in-out;
 
+
 }
 
-#music .jumbotron {
-    background-color: transparent;
-    margin-bottom: 0;
-    padding-bottom: 5vh;
-}
+
 
 
 /* -----------------------------------
@@ -347,10 +329,9 @@ img {
 -------------------------------------- */
 
 @media (min-width: 576px) {
-    #music .container-fluid {
+    .music-main {
         background-image: url(../assets/images/bg-music-xlg.jpg);
         background-repeat: no-repeat;
-        background-position-x: center;
         background-size: cover;
     }
 
@@ -364,11 +345,12 @@ img {
 
 @media (min-width: 581px) {
     .header-name {
-        height: 85%;
+        height: 80%;
     }
 
-    .header-name h1 {
-        font-size: 5rem;
+    .music-players {
+        margin-left: 5vh;
+        padding: 4vh 0 6vh 0;
     }
 }
 
@@ -394,33 +376,30 @@ img {
         display: flex;
         position: absolute;
         flex-direction: row;
-        margin-top: 100px;
-        width: 50%;
+        margin-left: 2.5vw;
+        
 
     }
 
     .main-header .container {
-        height: 200px;
         padding-top: 13px;
-        background-color: transparent;
-        overflow: hidden;
+        margin: 10vh 0 0 2.5vw;
+        padding-top: 3vh;
     }
 
     .header-name h1 {
-        text-align: center;
-        padding-right: 30px;
-        text-shadow: none;
-        height: 150px;
-
+        color: rgba(53, 53, 53);
+        background-color: unset; 
+        text-shadow: 1px 1px 3px #351f1f;
+        font-size: 3rem;
     }
 
-}
-
-@media(max-width: 925px) {
-    .header-name h1 {
-        font-size: 4.5rem;
+    .music-main {
+        height: 100vh;
+        width: 100vw;
     }
 }
+
 
 @media (min-width: 1328px) {
     .main-header {
@@ -430,11 +409,20 @@ img {
         background-size: cover;
     }
 
+    .header-name .container {
+        margin: 10vh 0 0 3.5vw;
+        padding-top: 10vh;
+    }
+
     .header-name h1 {
         text-align: left;
-        padding-left: 20%;
-        margin: 0;
-        padding-right: 30px;
-        font-size: 6.5rem;
+        font-size: 4.5rem;
+        margin-bottom: 0;
     }
+
+    .music-players {
+        margin-left: 20vh;
+        padding: 4vh 0 6vh 0;
+
+        }
 }
