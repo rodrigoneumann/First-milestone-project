@@ -5,8 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
-}
+ }
 
 body {
     font-family: "Roboto", sans-serif;
@@ -30,6 +29,23 @@ a:focus {
     transition: all 0.3s;
 }
 
+.sectors-title,
+.sectors-title-white {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.sectors-title,
+.sectors-title-white, h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.sectors-title-white h1 {
+    color: #eeeaea;
+}
 
 /* -----------------------------------
     NAVBAR 
@@ -144,7 +160,7 @@ a.article:hover {
 -------------------------------------- */
 
 .main-header {
-    background-image: url(../assets/images/st-main-mobile.jpg);
+    background-image: url(../images/st-main-mobile.jpg);
     height: 75vh;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -175,8 +191,8 @@ a.article:hover {
     color: #fafafa;
     text-align: center;
 
-    
-    }
+
+}
 
 /* -----------------------------------
     SOCIALMEDIA TOP-RIGHT
@@ -221,23 +237,13 @@ a.article:hover {
 -------------------------------------- */
 
 .music-main {
-    background-image: url(../assets/images/bg-music-mobile.jpg);
+    background-image: url(../images/bg-music-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 75vh;
-}
-
-.music-top {
-    margin-top: 30px;
-    margin-left: 15px;
-}
-
-.music-top h1 {
-    font-size: 1.5em;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
+    padding: 0;
+    margin: 0;
+    }
 
 .apple-music {
     padding: 6vh 0 1vh 0;
@@ -246,7 +252,7 @@ a.article:hover {
 .spotify,
 .youtube-music,
 .amazon-music {
-    padding: 4vh 0 1vh 0;  
+    padding: 4vh 0 1vh 0;
 }
 
 .spotify,
@@ -260,8 +266,6 @@ img {
 
 }
 
-
-
 .spotify:hover,
 .apple-music:hover,
 .youtube-music:hover,
@@ -273,22 +277,61 @@ img {
 
 }
 
-
-
-
 /* -----------------------------------
     VIDEOS
 -------------------------------------- */
 
-#videos .container-fluid {
-    height: 75vh;
-    background-color: aqua;
-    background-size: cover;
+.videos-main {
+    padding: 0 0 5vh 0;
+    background-color: #000;
     background-repeat: no-repeat;
-    overflow-y: auto;
-    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-
+    overflow-y: none;
 }
+
+.carousel-videos {
+    padding: 0;
+    margin: 0;
+}
+
+.box-thumbs-videos {
+    background-color: #000;
+    position: relative;
+    padding: 0;
+    margin: 0 1px;
+    }
+
+.videoYouTube:hover .figure-youtube {
+    -webkit-filter:brightness(120%);
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -o-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .2s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: .2s;
+    -moz-animation-timing-function: ease;
+    -moz-animation-fill-mode: both;
+    -ms-animation-duration: 1s;
+    -ms-animation-delay: .2s;
+    -ms-animation-timing-function: ease;
+    -ms-animation-fill-mode: both;
+    -o-animation-duration: 1s;
+    -o-animation-delay: .2s;
+    -o-animation-timing-function: ease;
+    -o-animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+.figure-youtube{
+    margin: 0;
+}
+
 
 /* -----------------------------------
     PHOTOS
@@ -300,7 +343,6 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     overflow-y: auto;
-    /* clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 85%); */
 
 }
 
@@ -330,7 +372,7 @@ img {
 
 @media (min-width: 576px) {
     .music-main {
-        background-image: url(../assets/images/bg-music-xlg.jpg);
+        background-image: url(../images/bg-music-xlg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -352,11 +394,15 @@ img {
         margin-left: 5vh;
         padding: 4vh 0 6vh 0;
     }
+
+    .owl-item:first-child {
+        display: none;
+    }
 }
 
 @media(min-width: 768px) {
     .main-header {
-        background-image: url(../assets/images/st-main-large.jpg);
+        background-image: url(../images/st-main-large.jpg);
         background-repeat: no-repeat;
         background-position-x: center;
         background-size: cover;
@@ -377,7 +423,7 @@ img {
         position: absolute;
         flex-direction: row;
         margin-left: 2.5vw;
-        
+
 
     }
 
@@ -389,12 +435,12 @@ img {
 
     .header-name h1 {
         color: rgba(53, 53, 53);
-        background-color: unset; 
+        background-color: unset;
         text-shadow: 1px 1px 3px #351f1f;
         font-size: 3rem;
     }
 
-    .music-main {
+    .music-main, {
         height: 100vh;
         width: 100vw;
     }
@@ -405,7 +451,7 @@ img {
     .main-header {
         height: 100vh;
         width: 100vw;
-        background-image: url(../assets/images/st-main-xlarge.jpg);
+        background-image: url(../images/st-main-xlarge.jpg);
         background-size: cover;
     }
 
@@ -424,5 +470,5 @@ img {
         margin-left: 20vh;
         padding: 4vh 0 6vh 0;
 
-        }
+    }
 }

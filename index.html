@@ -12,11 +12,15 @@
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-    <!-- Font Awesome JS -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--Owl Carousel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!-- My own style sheet -->
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
 
 </head>
 
@@ -51,7 +55,7 @@
                     <button type="button" id="sidebarCollapse" class="btn">
                         <i class="fas fa-chevron-circle-right fa-2x"></i>
                     </button>
-
+                </div>
             </nav>
         </div>
 
@@ -108,75 +112,173 @@
 
         <div class="header-name">
             <div class="container">
-                <h1 class=>Steven Tyler</h1>
+                <h1>Steven Tyler</h1>
             </div>
         </div>
 
     </header>
 
     <section class="container-fluid music-main" id="music">
-            <div class="row">
-                <div class="col-lg-12 music-top">
-                    <h1>Music</h1>
+        <div class="row">
+            <div class="col-lg-12 sectors-title">
+                <h1>Music</h1>
+            </div>
+        </div>
+
+        <div
+            class="d-flex flex-column justify-content-center justify-content-sm-start align-items-center align-items-sm-start mb-5 mb-md-3 mb-xl-1 bg-transparent">
+
+            <div class="col-9 col-sm-4 col-lg-6 music-players ">
+                <div class="spotify">
+                    <img src="../assets/images/spotify.png" alt="Spotify">
                 </div>
             </div>
-            
-            <div class="d-flex flex-column justify-content-center justify-content-sm-start align-items-center align-items-sm-start  bg-transparent">
-                
-                    <div class="col-10 col-sm-5 music-players ">
-                        <div class="spotify">
-                            <img src="../assets/images/spotify.png" alt="Spotify">
-                        </div>
-                    </div>
-                    
-                    <div class="col-10 col-sm-5 music-players">
-                        <div class="amazon-music">
-                            <img src="../assets/images/amazon-music.png" alt="Amazon Music">
-                        </div>
-                    </div>
-                    
-                    <div class="col-10 col-sm-5 music-players">
-                        <div class="youtube-music">
-                            <img src="../assets/images/youtube-music-logo.png" alt="Youtube Music">
-                        </div>
-                    </div>
-                    
-                    <div class="col-10 col-sm-5 music-players">
-                        <div class="apple-music">
-                            <img src="../assets/images/applemusic.png" alt="Apple Music">
-                        </div>
-                    </div>
-               
+
+            <div class="col-9 col-sm-4 music-players">
+                <div class="amazon-music">
+                    <img src="../assets/images/amazon-music.png" alt="Amazon Music">
+                </div>
+            </div>
+
+            <div class="col-9 col-sm-4 music-players">
+                <div class="youtube-music">
+                    <img src="../assets/images/youtube-music-logo.png" alt="Youtube Music">
+                </div>
+            </div>
+
+            <div class="col-9 col-sm-4 music-players">
+                <div class="apple-music">
+                    <img src="../assets/images/applemusic.png" alt="Apple Music">
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="videos">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
+    <section class="container-fluid videos-main" id="videos">
+        <div class="row">
+            <div class="col-lg-12 sectors-title-white">
+                <h1>Videos</h1>
+            </div>
+        </div>
+        <div class="container-fluid d-flex flex-row justify-content-center col-12 col-xl-9 pt-lg-4 ">
+            <div class="container-fluid">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe id="PlayerYouTube" class="embed-responsive-item"
+                    src="https://www.youtube.com/embed/4br5ARO3S20?start=11" frameborder="0" allowfullscreen></iframe>
+            </div>
 
-                    <h1>Videos</h1>
+
+            <!-- carousel -->
+            <div class="carousel-videos">
+                <div id="carousel">
+                    <div id="owl-carousel" class="owl-carousel">
+                        <div class="item">
+                            <div class="box-thumbs-videos">
+                                <a href="#PlayerYouTube" rel="https://www.youtube.com/embed/dxpeQTUBTeQ"
+                                    class="videoYouTube">
+                                    <span></span>
+                                    <figure class="figure-youtube">
+                                        <img src="https://img.youtube.com/vi/dxpeQTUBTeQ/0.jpg" alt="More than words" />
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="box-thumbs-videos">
+                                <a href="#PlayerYouTube" rel="https://www.youtube.com/embed/DVr9e73UaMk"
+                                    class="videoYouTube">
+                                    <span></span>
+                                    <figure class="figure-youtube">
+                                        <img class="img-fluid" src="https://img.youtube.com/vi/DVr9e73UaMk/0.jpg"
+                                            alt="Livin' On The Edge" />
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="box-thumbs-videos">
+                                <a href="#PlayerYouTube" rel="https://www.youtube.com/embed/49KD6a0nAeI"
+                                    class="videoYouTube">
+                                    <span></span>
+                                    <figure class="figure-youtube">
+                                        <img class="img-fluid" src="https://img.youtube.com/vi/49KD6a0nAeI/0.jpg"
+                                            alt="Love is your name" />
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="box-thumbs-videos">
+                                <a href="#PlayerYouTube" rel="https://www.youtube.com/embed/7iCLYZeodV4"
+                                    class="videoYouTube">
+                                    <span></span>
+                                    <figure class="figure-youtube">
+                                        <img class="img-fluid" src="https://img.youtube.com/vi/7iCLYZeodV4/0.jpg"
+                                            alt="Peace of my heart" />
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="box-thumbs-videos">
+                                <a href="#PlayerYouTube" rel="https://www.youtube.com/embed/KlOtOk_rNo8"
+                                    class="videoYouTube">
+                                    <span></span>
+                                    <figure class="figure-youtube">
+                                        <img class="img-fluid" src="https://img.youtube.com/vi/EyN5wpWkfyU/0.jpg"
+                                            alt="Crying" />
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="box-thumbs-videos">
+                                <a href="#PlayerYouTube" rel="https://www.youtube.com/embed/4br5ARO3S20?start=11"
+                                    class="videoYouTube">
+                                    <span></span>
+                                    <figure class="figure-youtube">
+                                        <img class="img-fluid" src="https://img.youtube.com/vi/4br5ARO3S20/0.jpg"
+                                            alt="Dream on" />
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    </section>
+
+
     </section>
 
     <section id="photos">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 sectors-title">
 
                     <h1>Photos</h1>
                 </div>
             </div>
+        </div>
     </section>
 
     <section id="follow">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 sectors-title">
 
                     <h1>Follow</h1>
                 </div>
             </div>
+        </div>
     </section>
 
 
@@ -186,17 +288,11 @@
 
 
     <!-- JQuery CDN-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous ">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "></script>
     <!--Popper JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous ">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "></script>
     <!-- Bootstrap JS-->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous ">
-    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "></script>
     <!-- jQuery Custom Scroller CDN -->
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
@@ -222,7 +318,61 @@
         });
     </script>
 
-    </div>
+    <script>
+        $(document).ready(function () {
+
+            $('.videoYouTube').click(function () {
+                url_video = this.rel;
+                $('#PlayerYouTube').attr('src', url_video);
+            });
+
+        });
+    </script>
+
+    <!-- Videos Carousel JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+
+            $('#owl-carousel').owlCarousel({
+                loop: false,
+                navigation: true,
+                autoHeight: true,
+                responsive: {
+                    0: {
+                        items: 2,
+                    },
+                    576: {
+                        items: 3
+                    },
+                    768: {
+                        items: 4
+                    },
+                    992: {
+                        items: 4
+                    },
+                    1200: {
+                        items: 5,
+                    },
+                    1500: {
+                        items: 6
+                    },
+                }
+            })
+
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-prev').click(function () {
+                $('.owl-item:first-child').css('display', 'block');
+            });
+        });
+    </script>
+
 
 </body>
 
