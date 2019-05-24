@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!--Fancybox CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <!-- My own style sheet -->
     <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
 
@@ -29,39 +31,38 @@
     <header class="main-header">
         <div class="row">
 
-            <!-- Sidebar -- code used by : https://bootstrapious.com/tutorial/sidebar/index3.html -->
+        <!-- Sidebar -- model code used by : https://bootstrapious.com/tutorial/sidebar/index3.html -->
             <nav id="sidebar">
                 <ul class="components">
                     <li class="active">
                         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
                     </li>
                     <li>
-                        <a href="#">Music</a>
+                        <a href="#music">Music</a>
                     </li>
                     <li>
-                        <a href="#">Video</a>
+                        <a href="#videos">Videos</a>
                     </li>
                     <li>
-                        <a href="#">Photos</a>
+                        <a href="#photos">Photos</a>
                     </li>
                     <li>
-                        <a href="#">Follow</a>
+                        <a href="#follow">Follow</a>
                     </li>
                 </ul>
             </nav>
-            <!-- Navbar -- code used by : https://bootstrapious.com/tutorial/sidebar/index3.html-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <!-- Navbar -- model code used by : https://bootstrapious.com/tutorial/sidebar/index3.html-->
+            <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <button type="button" id="sidebarCollapse" class="btn">
-                        <i class="fas fa-chevron-circle-right fa-2x"></i>
+                        <div id="nav-icon"></div>
+                        <i class="fas fa-bars fa-2x"></i>
                     </button>
                 </div>
             </nav>
         </div>
-
         <div class="overlay"></div>
-
-        <!--. SOCIAL MEDIA LINKS TOP RIGHT -- code by Full stack Diploma "ROSIE CV" Classes -->
+        <!--. SOCIAL MEDIA LINKS TOP RIGHT -- model code by Full stack Diploma "ROSIE CV" Classes -->
         <div class="right-top-header col-7 ml-auto">
             <div class="socialmedialinks-top col-12 d-flex flex-row-reverse">
                 <ul class="list-inline social-links">
@@ -126,29 +127,29 @@
         </div>
 
         <div
-            class="d-flex flex-column justify-content-center justify-content-sm-start align-items-center align-items-sm-start mb-5 mb-md-3 mb-xl-1 bg-transparent">
+            class="d-flex flex-column justify-content-center justify-content-sm-start align-items-center align-items-sm-start mb-5 mb-md-3 mb-xl-1 ml-md-4 bg-transparent">
 
             <div class="col-9 col-sm-4 col-lg-6 music-players ">
                 <div class="spotify">
-                    <img src="../assets/images/spotify.png" alt="Spotify">
+                    <img src="../assets/images/spotify.png" class="players" alt="Spotify">
                 </div>
             </div>
 
             <div class="col-9 col-sm-4 music-players">
                 <div class="amazon-music">
-                    <img src="../assets/images/amazon-music.png" alt="Amazon Music">
+                    <img src="../assets/images/amazon-music.png" class="players" alt="Amazon Music">
                 </div>
             </div>
 
             <div class="col-9 col-sm-4 music-players">
                 <div class="youtube-music">
-                    <img src="../assets/images/youtube-music-logo.png" alt="Youtube Music">
+                    <img src="../assets/images/youtube-music-logo.png" class="players" alt="Youtube Music">
                 </div>
             </div>
 
             <div class="col-9 col-sm-4 music-players">
                 <div class="apple-music">
-                    <img src="../assets/images/applemusic.png" alt="Apple Music">
+                    <img src="../assets/images/applemusic.png" class="players" alt="Apple Music">
                 </div>
             </div>
         </div>
@@ -162,18 +163,19 @@
         </div>
         <div class="container-fluid d-flex flex-row justify-content-center col-11 col-xl-9 pt-lg-4 ">
             <div class="row">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe id="PlayerYouTube" class="embed-responsive-item"
-                    src="https://www.youtube.com/embed/4br5ARO3S20?start=11" frameborder="0" allowfullscreen></iframe>
-            </div>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe id="PlayerYouTube" class="embed-responsive-item"
+                        src="https://www.youtube.com/embed/4br5ARO3S20?start=11" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
 
 
-            <!-- carousel -->
-            <div class="carousel-videos">
+                <!-- carousel -->
+                <div class="carousel-videos">
                     <div id="owl-carousel" class="owl-carousel owl-theme" style="opacity: 1; display: block">
                         <div class="item">
                             <div class="box-thumbs-videos">
-                                <a href="#PlayerYouTube" rel="https://www.youtube.com/embed/dxpeQTUBTeQ"
+                                <a href="#PlayerYouTube" rel="https://www.youtube.com/embed/dxpeQTUBTeQ?ecver=1"
                                     class="videoYouTube">
                                     <span></span>
                                     <figure class="figure-youtube">
@@ -189,7 +191,7 @@
                                     class="videoYouTube">
                                     <span></span>
                                     <figure class="figure-youtube">
-                                        <img class="img-fluid" src="https://img.youtube.com/vi/DVr9e73UaMk/0.jpg"
+                                        <img src="https://img.youtube.com/vi/DVr9e73UaMk/0.jpg"
                                             alt="Livin' On The Edge" />
                                     </figure>
                                 </a>
@@ -198,11 +200,11 @@
 
                         <div class="item">
                             <div class="box-thumbs-videos">
-                                <a href="#PlayerYouTube" rel="https://www.youtube.com/embed/49KD6a0nAeI"
+                                <a href="#PlayerYouTube" rel="https://www.youtube.com/embed/49KD6a0nAeI?ecver=1"
                                     class="videoYouTube">
                                     <span></span>
                                     <figure class="figure-youtube">
-                                        <img class="img-fluid" src="https://img.youtube.com/vi/49KD6a0nAeI/0.jpg"
+                                        <img src="https://img.youtube.com/vi/49KD6a0nAeI/0.jpg"
                                             alt="Love is your name" />
                                     </figure>
                                 </a>
@@ -215,7 +217,7 @@
                                     class="videoYouTube">
                                     <span></span>
                                     <figure class="figure-youtube">
-                                        <img class="img-fluid" src="https://img.youtube.com/vi/7iCLYZeodV4/0.jpg"
+                                        <img src="https://img.youtube.com/vi/7iCLYZeodV4/0.jpg"
                                             alt="Peace of my heart" />
                                     </figure>
                                 </a>
@@ -228,8 +230,19 @@
                                     class="videoYouTube">
                                     <span></span>
                                     <figure class="figure-youtube">
-                                        <img class="img-fluid" src="https://img.youtube.com/vi/EyN5wpWkfyU/0.jpg"
-                                            alt="Crying" />
+                                        <img src="https://img.youtube.com/vi/EyN5wpWkfyU/0.jpg" alt="Crying" />
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="box-thumbs-videos">
+                                <a href="#PlayerYouTube" rel="https://www.youtube.com/embed/ICVWTe083SM?ecver=1"
+                                    class="videoYouTube">
+                                    <span></span>
+                                    <figure class="figure-youtube">
+                                        <img src="https://img.youtube.com/vi/ICVWTe083SM/0.jpg" alt="Walk this way" />
                                     </figure>
                                 </a>
                             </div>
@@ -241,8 +254,7 @@
                                     class="videoYouTube">
                                     <span></span>
                                     <figure class="figure-youtube">
-                                        <img class="img-fluid" src="https://img.youtube.com/vi/4br5ARO3S20/0.jpg"
-                                            alt="Dream on" />
+                                        <img src="https://img.youtube.com/vi/4br5ARO3S20/0.jpg" alt="Dream on" />
                                     </figure>
                                 </a>
                             </div>
@@ -250,21 +262,107 @@
                     </div>
                 </div>
             </div>
-    </div>
+        </div>
 
     </section>
 
 
-    <section id="photos">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 sectors-title">
-
-                    <h1>Photos</h1>
+    <section class="container-fluid  photos-main" id="photos">
+        <div class="row">
+            <div class="col-lg-12 sectors-title">
+                <h1>Photos</h1>
+            </div>
+        </div>
+        <div class="container-fluid my-4">
+            <div class="row gallery-row justify-content-center">
+                <div class="col-sm-12 col-md-10">
+                    <div class="row gallery-row justify-content-center text-center">
+                        <figure class="gallery-img col-sm-6 col-md-4 col-lg-3">
+                            <a data-fancybox="gallery" data-caption="Steven Tyler" href="../assets/images/1.jpg">
+                                <img class="gallery-thumbnail" src="../assets/images/thumb/1-thumb.jpg" alt="">
+                            </a>
+                        </figure>
+                        <figure class="gallery-img col-sm-6 col-md-4 col-lg-3">
+                            <a data-fancybox="gallery" data-caption="Steven Tyler" href="../assets/images/2.jpg">
+                                <img class="gallery-thumbnail" src="../assets/images/thumb/2-thumb.jpg" alt="">
+                            </a>
+                        </figure>
+                        <figure class="gallery-img col-sm-6 col-md-4 col-lg-3">
+                            <a data-fancybox="gallery" data-caption="Steven Tyler" href="../assets/images/3.jpg">
+                                <img class="gallery-thumbnail" src="../assets/images/thumb/3-thumb.jpg" alt="">
+                            </a>
+                        </figure>
+                        <figure class="gallery-img col-sm-6 col-md-4 col-lg-3">
+                            <a data-fancybox="gallery" data-caption="Steven Tyler" href="../assets/images/4.jpg">
+                                <img class="gallery-thumbnail" src="../assets/images/thumb/4-thumb.jpg" alt="">
+                            </a>
+                        </figure>
+                        <figure class="gallery-img col-sm-6 col-md-4 col-lg-3">
+                            <a data-fancybox="gallery" data-caption="Steven Tyler" href="../assets/images/5.jpg">
+                                <img class="gallery-thumbnail" src="../assets/images/thumb/5-thumb.jpg" alt="">
+                            </a>
+                        </figure>
+                        <figure class="gallery-img col-sm-6 col-md-4 col-lg-3">
+                            <a data-fancybox="gallery" data-caption="Steven Tyler" href="../assets/images/6.jpg">
+                                <img class="gallery-thumbnail" src="../assets/images/thumb/6-thumb.jpg" alt="">
+                            </a>
+                        </figure>
+                        <figure class="gallery-img col-sm-6 col-md-4 col-lg-3">
+                            <a data-fancybox="gallery" data-caption="Steven Tyler" href="../assets/images/7.jpg">
+                                <img class="gallery-thumbnail" src="../assets/images/thumb/7-thumb.jpg" alt="">
+                            </a>
+                        </figure>
+                        <figure class="gallery-img col-sm-6 col-md-4 col-lg-3">
+                            <a data-fancybox="gallery" data-caption="Steven Tyler" href="../assets/images/8.jpg">
+                                <img class="gallery-thumbnail" src="../assets/images/thumb/8-thumb.jpg" alt="">
+                            </a>
+                        </figure>
+                        <figure class="gallery-img col-sm-6 col-md-4 col-lg-3">
+                            <a data-fancybox="gallery" data-caption="Steven Tyler" href="../assets/images/9.jpg">
+                                <img class="gallery-thumbnail" src="../assets/images/thumb/9-thumb.jpg" alt="">
+                            </a>
+                        </figure>
+                        <figure class="gallery-img col-sm-6 col-md-4 col-lg-3">
+                            <a data-fancybox="gallery" data-caption="Steven Tyler" href="../assets/images/10.jpg">
+                                <img class="gallery-thumbnail" src="../assets/images/thumb/10-thumb.jpg" alt="">
+                            </a>
+                        </figure>
+                        <figure class="gallery-img col-sm-6 col-md-4 col-lg-3">
+                            <a data-fancybox="gallery" data-caption="Steven Tyler" href="../assets/images/11.jpg">
+                                <img class="gallery-thumbnail" src="../assets/images/thumb/11-thumb.jpg" alt="">
+                            </a>
+                        </figure>
+                        <figure class="gallery-img col-sm-6 col-md-4 col-lg-3">
+                            <a data-fancybox="gallery" data-caption="Liv Tyler" href="../assets/images/12.jpg">
+                                <img class="gallery-thumbnail" src="../assets/images/thumb/12-thumb.jpg" alt="">
+                            </a>
+                        </figure>
+                        <figure class="gallery-img col-sm-6 col-md-4 col-lg-3">
+                            <a data-fancybox="gallery" data-caption="Steven Tyler and Joe Perry" href="../assets/images/13.jpg">
+                                <img class="gallery-thumbnail" src="../assets/images/thumb/13-thumb.jpg" alt="">
+                            </a>
+                        </figure>
+                        <figure class="gallery-img col-sm-6 col-md-4 col-lg-3">
+                            <a data-fancybox="gallery" data-caption="Aerosmith" href="../assets/images/14.jpg">
+                                <img class="gallery-thumbnail" src="../assets/images/thumb/14-thumb.jpg" alt="">
+                            </a>
+                        </figure>
+                        <figure class="gallery-img col-sm-6 col-md-4 col-lg-3">
+                            <a data-fancybox="gallery" data-caption="Aerosmith" href="../assets/images/15.jpg">
+                                <img class="gallery-thumbnail" src="../assets/images/thumb/15-thumb.jpg" alt="">
+                            </a>
+                        </figure>
+                        <figure class="gallery-img col-sm-6 col-md-4 col-lg-3">
+                            <a data-fancybox="gallery" data-caption="Aerosmith" href="../assets/images/16.jpg">
+                                <img class="gallery-thumbnail" src="../assets/images/thumb/16-thumb.jpg" alt="">
+                            </a>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section id="follow">
         <div class="container-fluid">
@@ -328,13 +426,11 @@
     <!-- Videos Carousel JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-
     <script>
         $(document).ready(function () {
 
             $('#owl-carousel').owlCarousel({
                 loop: true,
-                navigation: true,
                 autoHeight: true,
                 responsive: {
                     0: {
@@ -368,6 +464,11 @@
             });
         });
     </script>
+
+    <!--Photos Fancybox JS-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
 
 
 </body>
