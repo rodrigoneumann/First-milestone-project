@@ -341,27 +341,30 @@ img.players:hover {
     margin: 0;
 }
 
-/*original code credit: https://codepen.io/sdthornton/pen/wBZdXq */
-.gallery-thumbnail {
+/* code model by https://codepen.io/sdthornton/pen/wBZdXq */
+.gallery-thumb {
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     -o-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     border-radius: 5px;
-    /*this code added by me*/
 }
 
-/* creates pleasing illusion of hovered image being raised up from the screen */
-/* original code credit: https://codepen.io/sdthornton/pen/wBZdXq */
-.gallery-thumbnail:hover {
-    /*width and height of hover shadow changed by me*/
-    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.25), 0 3px 6px rgba(0, 0, 0, 0.22);
-    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.25), 0 3px 6px rgba(0, 0, 0, 0.22);
-}
-
-.gallery-img img {
+.gallery,
+.gallery-left, img {
     width: 100%;
+    height: 100%;
+}
+
+.gallery-left {
+    padding-right: 7px;
+    padding-bottom: 3px;
+}
+
+.gallery {
+    padding-left: 7px;
+    padding-bottom: 3px;
 }
 
 /* -----------------------------------
@@ -373,7 +376,6 @@ img.players:hover {
     background-size: cover;
     background-repeat: no-repeat;
     overflow-y: auto;
-    /*clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%); */
 
 }
 
@@ -453,6 +455,10 @@ img.players:hover {
         font-size: 3rem;
     }
 
+    .gallery-left,
+    .gallery {
+        padding: 0 15px 3px 15px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 915px) {
