@@ -122,37 +122,37 @@
         <div
             class="d-flex flex-column justify-content-center justify-content-sm-start align-items-center align-items-sm-start mb-5 mb-md-3 mb-xl-1 ml-md-4 bg-transparent">
 
-            <div class="col-9 col-sm-4 music-players ">
-                <div class="spotify">
+            <div class="col-9 col-sm-4 col-lg-3 music-players ">
+                <figure class="spotify">
                     <a href="https://open.spotify.com/artist/32zks9ovi0IExzUd1C7W6o" target="_blank">
                         <img src="../assets/images/spotify.png" class="players" alt="Spotify">
                     </a>
-                </div>
+                </figure>
             </div>
 
-            <div class="col-9 col-sm-4 music-players">
-                <div class="amazon-music">
+            <div class="col-9 col-sm-4 col-lg-3 music-players">
+                <figure class="amazon-music">
                     <a href="https://music.amazon.com/artists/B000QJO5BU?ref=dm_sh_3ad8-9ac4-dmcp-738c-c2b70&musicTerritory=US&marketplaceId=ATVPDKIKX0DER"
                         target="_blank">
                         <img src="../assets/images/amazon-music.png" class="players" alt="Amazon Music">
                     </a>
-                </div>
+                </figure>
             </div>
 
-            <div class="col-9 col-sm-4 music-players">
-                <div class="youtube-music">
+            <div class="col-9 col-sm-4 col-lg-3 music-players">
+                <figure class="youtube-music">
                     <a href="https://music.youtube.com/channel/UCkPXJdQaDMR7bbWN7pEcDwA" target="_blank">
                         <img src="../assets/images/youtube-music-logo.png" class="players" alt="Youtube Music">
                     </a>
-                </div>
+                </figure>
             </div>
 
-            <div class="col-9 col-sm-4 music-players">
-                <div class="apple-music">
+            <div class="col-9 col-sm-4 col-lg-3 music-players">
+                <figure class="apple-music">
                     <a href="https://itunes.apple.com/us/artist/steven-tyler/54626" target="_blank">
                         <img src="../assets/images/applemusic.png" class="players" alt="Apple Music">
                     </a>
-                </div>
+                </figure>
             </div>
         </div>
     </section>
@@ -340,7 +340,8 @@
                             </a>
                         </figure>
                         <figure class="col-6 col-md-3 gallery-left">
-                            <a data-fancybox="gallery" data-caption="Steven Tyler and Joe Perry" href="../assets/images/13.jpg">
+                            <a data-fancybox="gallery" data-caption="Steven Tyler and Joe Perry"
+                                href="../assets/images/13.jpg">
                                 <img class="gallery-thumb" src="../assets/images/thumb/13-thumb.jpg" alt="">
                             </a>
                         </figure>
@@ -366,20 +367,83 @@
     </section>
 
 
-    <section id="follow">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 sectors-title">
+    <section class="cointainer-fluid follow-main pb-3" id=follow>
 
-                    <h1>Follow</h1>
+        <div class="row title-follow">
+            <div class="col sectors-title-follow">
+                <h1>Follow</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center justify-content-sm-end py-4 px-md-5 pt-lg-5">
+            <div class="col col-sm-6 col-lg-5 p-xs-3 form-container">
+                <h5 class="text-center text-uppercase pt-3">Subscribe for news</h5>
+                <div class="form">
+                    <form>
+                        <div class="row news">
+                            <input type="text" class="form-control" id="exampleInputName" name='Name' placeholder="Name"
+                                required>
+                        </div>
+                        <div class="row news">
+                            <input type="email" class="form-control" id="exampleInputEmail1" name='Email'
+                                placeholder="Email" required>
+                        </div>
+                        <div class="button-follow d-flex justify-content-end mt-2 mb-3">
+                            <input type="submit" value='Submit' class="btn btn-secondary">
+                        </div>
+                    </form>
                 </div>
+            </div>
+        </div>
+        <div class="row justify-content-center justify-content-sm-end px-md-5">
+            <div class="col-12 col-sm-6 col-lg-5 socialmedialinks">
+                <ul class="list-inline-follow social-links-follow">
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.facebook.com/steventyler/">
+                            <i class="fab fa-facebook fa-3x" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://twitter.com/iamstevent">
+                            <i class="fab fa-twitter fa-3x" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.instagram.com/iamstevent">
+                            <i class="fab fa-instagram fa-3x" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.youtube.com/channel/UCff3ZRWU3pClQ7DO8RsNfuw">
+                            <i class="fab fa-youtube fa-3x" aria-hidden="true"></i>
+                            <span class="sr-only">Youtube</span>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.pinterest.co.uk/iamstevent/steven-tyler/">
+                            <i class="fab fa-pinterest fa-3x" aria-hidden="true"></i>
+                            <span class="sr-only">Pinterest</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
 
 
     <footer>
-
+        <div class="container-fluid col d-flex flex-column py-2 py-lg-4 footer-main">
+            <div class="steven-logo"></div>
+            <div class="col copyright text-center">
+                <p>COPYRIGHT © STEVEN TYLER. ALL RIGHTS RESERVED.</p>
+                </div>
+         </div>
     </footer>
 
 
