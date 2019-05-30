@@ -70,9 +70,9 @@ h1 {
 -------------------------------------- */
 
 #sidebar {
-    width: 250px;
+    width: auto;
     position: fixed;
-    top: 0;
+    top: -20px;
     left: -250px;
     height: 100vh;
     z-index: 999;
@@ -92,7 +92,7 @@ h1 {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 998;
     opacity: 0;
     transition: all 0.5s ease-in-out;
@@ -101,11 +101,6 @@ h1 {
 .overlay.active {
     display: block;
     opacity: 1;
-}
-
-#sidebar .sidebar-header {
-    padding: 20px;
-    background: #6d7fcc;
 }
 
 #sidebar ul.components {
@@ -120,7 +115,8 @@ h1 {
 #sidebar ul li a {
     text-align: center;
     padding: 10px;
-    font-size: 1.1em;
+    font-size: 1.5em;
+    text-transform: uppercase;
     display: block;
 }
 
@@ -328,10 +324,21 @@ img.players:hover {
     margin: 0;
 }
 
+.owl-stage {
+    overflow: hidden;
+}
+
+.owl-dot :active {
+    text-decoration: none;
+}
+
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
     background: #970707;
+    text-decoration: none;
+
 }
+
 
 /* -----------------------------------
     PHOTOS
@@ -376,7 +383,7 @@ img {
 -------------------------------------- */
 
 .follow-main {
-    height:70vh;
+    height:75vh;
     background-image: url(../images/bg-follow.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -388,14 +395,20 @@ img {
 }
 
 .form-container {
-    background-color: rgba(80, 80, 80, 0.7);
+    background-color: rgba(80, 80, 80, 0.6);
     color: #fafafa;
     border-radius: 20px;
-
 }
 
 .news {
     margin: 5px 8px 5px 8px;
+}
+
+.follow-socialmedia h5 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fafafa;
+    padding: 0 8px 0 0;
 }
 
 .button-follow {
@@ -406,10 +419,12 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
 
 }
 
 .social-links-follow {
+    padding: 0 8px 0 0;
     margin: 0;
 }
 
@@ -450,6 +465,7 @@ img {
     height: 70px;
     width: 55px;
     background-image: url("../images/steventylerlogo.png");
+    background-repeat: no-repeat;
     margin: 0 auto 5px auto;
 }
 
@@ -458,6 +474,7 @@ img {
     margin: 0;
     padding: 0;
     font-size: 0.7rem;
+    overflow: hidden;
 }
 
 
@@ -467,12 +484,13 @@ img {
 -------------------------------------- */
 
 @media (min-width: 576px) {
+    /* Music */
     .music-main {
         background-image: url(../images/bg-music-xlg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
-
+    /* Follow */
     .follow-main {
         background-image: url(../images/bg-follow-lg.jpg);
         background-size: cover;
@@ -489,22 +507,29 @@ img {
         width: 40px;
     }
 
+    .follow-socialmedia h5 {
+        font-size: 1rem;
+        color: #000;
+    }
+    /* Footer */
     .copyright {
         font-size: 0.8rem;
     }
 }
 
 @media (max-width: 580px) {
+   /* Header */
     .right-top-header {
         display: none;
     }
 }
 
 @media (min-width: 581px) {
+    /* Header */
     .header-name {
         height: 80%;
     }
-
+    /* Music */
     .music-players {
         margin-left: 5vh;
         padding: 4vh 0 6vh 0;
@@ -513,6 +538,7 @@ img {
 }
 
 @media(min-width: 768px) {
+    /* Header */
     .main-header {
         background-image: url(../images/st-main-large.jpg);
         background-repeat: no-repeat;
@@ -550,14 +576,14 @@ img {
         text-shadow: 1px 1px 3px #351f1f;
         font-size: 3rem;
     }
-
+    /* Photos */
     .gallery-left,
     .gallery {
         padding: 0 15px 3px 15px;
     }
-
+    /* Follow */
     .follow-main{
-        height: 40vh;
+        height: 45vh;
     }
 
     .social-links-follow li a i {
@@ -565,18 +591,20 @@ img {
         height: 52px;
         width: 52px;
     }
-
+    /* Footer */
     .footer-main {
         height: 15vh;
 }
 
 @media (min-width: 768px) and (max-width: 915px) {
+    /* Header */
     .header-name h1 {
         font-size: 2.6rem;
     }
 }
 
 @media (min-width: 1328px) {
+    /* Header */
     .main-header {
         height: 100vh;
         width: 100vw;
@@ -594,15 +622,23 @@ img {
         font-size: 4.5rem;
         margin-bottom: 0;
     }
-
+    /* Music */
     .music-players {
         margin-left: 20vh;
         padding: 4vh 0 6vh 0;
 
     }
-
+    /* Follow */
     .follow-main{
         height: 90vh;
+    }
+
+    .form-container h5 {
+        font-size: 1.4rem;
+    }
+
+    .follow-socialmedia h5 {
+        font-size: 1.4rem;
     }
 
     .social-links-follow li a i {
@@ -610,7 +646,7 @@ img {
         height: 80px;
         width: 80px;
     }
-
+    /* Footer */
     .footer-main {
         height: 23vh;
     }

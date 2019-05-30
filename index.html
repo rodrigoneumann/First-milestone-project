@@ -27,31 +27,36 @@
 </head>
 
 <body>
-
-    <header class="main-header">
+<!-- Header -->
+    <header class="main-header" id="home">
         <div class="row">
 
-            <!-- Sidebar -- model code used by : https://bootstrapious.com/tutorial/sidebar/index3.html -->
+<!-- Sidebar -- model code used by : https://bootstrapious.com/tutorial/sidebar/index3.html -->
             <nav id="sidebar">
                 <ul class="components">
-                    <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
-                    </li>
-                    <li>
-                        <a href="#music">Music</a>
-                    </li>
-                    <li>
-                        <a href="#videos">Videos</a>
-                    </li>
-                    <li>
-                        <a href="#photos">Photos</a>
-                    </li>
-                    <li>
-                        <a href="#follow">Follow</a>
-                    </li>
+                    <div class="overlay">
+                        <li class="active">
+                            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">STEVEN TYLER</a>
+                        </li>
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#music">Music</a>
+                        </li>
+                        <li>
+                            <a href="#videos">Videos</a>
+                        </li>
+                        <li>
+                            <a href="#photos">Photos</a>
+                        </li>
+                        <li>
+                            <a href="#follow">Follow</a>
+                        </li>
+                    </div>
                 </ul>
             </nav>
-            <!-- Navbar -- model code used by : https://bootstrapious.com/tutorial/sidebar/index3.html-->
+<!-- Navbar -- model code used by : https://bootstrapious.com/tutorial/sidebar/index3.html-->
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <button type="button" id="sidebarCollapse" class="btn">
@@ -61,8 +66,8 @@
                 </div>
             </nav>
         </div>
-        <div class="overlay"></div>
-        <!--. SOCIAL MEDIA LINKS TOP RIGHT -- model code by Full stack Diploma "ROSIE CV" Classes -->
+
+ <!--. SOCIAL MEDIA LINKS TOP RIGHT -- model code by Full stack Diploma "ROSIE CV" Classes -->
         <div class="right-top-header col-7 ml-auto">
             <div class="socialmedialinks-top col-12 d-flex flex-row-reverse">
                 <ul class="list-inline social-links">
@@ -104,6 +109,7 @@
             </div>
         </div>
 
+<!-- Header Name -->
         <div class="header-name">
             <div class="container">
                 <h1>Steven Tyler</h1>
@@ -112,6 +118,7 @@
 
     </header>
 
+<!-- Music -->
     <section class="container-fluid music-main" id="music">
         <div class="row">
             <div class="col-lg-12 sectors-title">
@@ -157,6 +164,7 @@
         </div>
     </section>
 
+<!-- Videos -->
     <section class="container-fluid videos-main" id="videos">
         <div class="row">
             <div class="col-lg-12 sectors-title-white">
@@ -268,7 +276,7 @@
 
     </section>
 
-
+<!-- Photos -->
     <section class="container-fluid  photos-main" id="photos">
         <div class="row">
             <div class="col-lg-12 sectors-title">
@@ -366,15 +374,15 @@
         </div>
     </section>
 
-
-    <section class="cointainer-fluid follow-main pb-3" id=follow>
+<!-- Follow -->
+    <section class="cointainer-fluid follow-main pb-3" id="follow">
 
         <div class="row title-follow">
             <div class="col sectors-title-follow">
                 <h1>Follow</h1>
             </div>
         </div>
-        <div class="row justify-content-center justify-content-sm-end py-4 px-md-5 pt-lg-5">
+        <div class="row justify-content-center justify-content-sm-end py-4 pr-md-5 pt-lg-5">
             <div class="col col-sm-6 col-lg-5 p-xs-3 form-container">
                 <h5 class="text-center text-uppercase pt-3">Subscribe for news</h5>
                 <div class="form">
@@ -394,7 +402,12 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center justify-content-sm-end px-md-5">
+        <div class="row justify-content-center justify-content-sm-end pt-2 px-md-5 follow-socialmedia">
+            <div class="col col-sm-6 col-lg-5 p-0">
+                <h5 class="text-center">Follow Steven Tyler on Social Media</h5>
+            </div>
+        </div>
+        <div class="row justify-content-center justify-content-sm-end py-1 px-md-5">
             <div class="col-12 col-sm-6 col-lg-5 socialmedialinks">
                 <ul class="list-inline-follow social-links-follow">
                     <li class="list-inline-item">
@@ -436,27 +449,31 @@
         </div>
     </section>
 
-
+<!-- Footer -->
     <footer>
         <div class="container-fluid col d-flex flex-column py-2 py-lg-4 footer-main">
             <div class="steven-logo"></div>
             <div class="col copyright text-center">
                 <p>COPYRIGHT © STEVEN TYLER. ALL RIGHTS RESERVED.</p>
-                </div>
-         </div>
+            </div>
+        </div>
     </footer>
 
 
     <!-- JQuery CDN-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "></script>
+    
     <!--Popper JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "></script>
+    
     <!-- Bootstrap JS-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "></script>
+    
     <!-- jQuery Custom Scroller CDN -->
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
     </script>
+    
     <!-- Sidebar JS-->
     <script type="text/javascript">
         $(document).ready(function () {
@@ -477,7 +494,8 @@
             });
         });
     </script>
-
+    
+    <!-- Youtube embed video JS -->
     <script>
         $(document).ready(function () {
 
@@ -496,8 +514,7 @@
         $(document).ready(function () {
 
             $('#owl-carousel').owlCarousel({
-                loop: true,
-                autoHeight: true,
+                loop: false,
                 responsive: {
                     0: {
                         items: 2,
@@ -534,8 +551,6 @@
     <!--Photos Fancybox JS-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-
-
 
 </body>
 
