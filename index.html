@@ -32,9 +32,10 @@
         <div class="row">
 
 <!-- Sidebar -- model code used by : https://bootstrapious.com/tutorial/sidebar/index3.html -->
+<!-- I have used this sidebar model to send for all the sectors -->
             <nav id="sidebar">
                 <ul class="components">
-                    <div class="overlay">
+                    <div class="overlay"> <!-- This class was added to close the menu after click -->
                         <li class="active">
                             <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">STEVEN TYLER</a>
                         </li>
@@ -57,11 +58,12 @@
                 </ul>
             </nav>
 <!-- Navbar -- model code used by : https://bootstrapious.com/tutorial/sidebar/index3.html-->
+<!-- Navbar button hamburger style by Font-Awesome -->
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <button type="button" id="sidebarCollapse" class="btn">
                         <div id="nav-icon"></div>
-                        <i class="fas fa-bars fa-2x"></i>
+                        <i class="fas fa-bars fa-2x"></i> 
                     </button>
                 </div>
             </nav>
@@ -119,17 +121,17 @@
     </header>
 
 <!-- Music -->
-    <section class="container-fluid music-main" id="music">
+    <section class="container-fluid music-main" id="music">  
         <div class="row">
-            <div class="col-lg-12 sectors-title">
+            <div class="col-lg-12 sectors-title">  
                 <h1>Music</h1>
             </div>
         </div>
+        <!-- D-flex wrapper for all the music players in column mode - Center justified for small displays and Left Justified for medium and large displays -->
+        <div class="d-flex flex-column justify-content-center justify-content-sm-start align-items-center align-items-sm-start mb-5 mb-md-3 mb-xl-1 ml-md-4 bg-transparent">
 
-        <div
-            class="d-flex flex-column justify-content-center justify-content-sm-start align-items-center align-items-sm-start mb-5 mb-md-3 mb-xl-1 ml-md-4 bg-transparent">
-
-            <div class="col-9 col-sm-4 col-lg-3 music-players ">
+            <!-- Responsivity for the players on the medium and large displays / Links to open the Steven Tyler channels on the players and websites -->
+            <div class="col-9 col-sm-4 col-lg-3 music-players ">  
                 <figure class="spotify">
                     <a href="https://open.spotify.com/artist/32zks9ovi0IExzUd1C7W6o" target="_blank">
                         <img src="../assets/images/spotify.png" class="players" alt="Spotify">
@@ -167,20 +169,19 @@
 <!-- Videos -->
     <section class="container-fluid videos-main" id="videos">
         <div class="row">
-            <div class="col-lg-12 sectors-title-white">
+            <div class="col-lg-12 sectors-title-white"> <!-- Title sector white when the background is dark-->
                 <h1>Videos</h1>
             </div>
         </div>
+        <!-- Container for the youtube player Embed Responsive -->
         <div class="container-fluid d-flex flex-row justify-content-center col-11 col-xl-9 pt-lg-4 ">
             <div class="row">
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe id="PlayerYouTube" class="embed-responsive-item"
-                        src="https://www.youtube.com/embed/4br5ARO3S20?start=11" frameborder="0"
-                        allowfullscreen></iframe>
+                        src="https://www.youtube.com/embed/4br5ARO3S20?start=11" allowfullscreen></iframe>
                 </div>
 
-
-                <!-- carousel -->
+        <!-- Videos carousel  OWL Carousel model  -->
                 <div class="carousel-videos">
                     <div id="owl-carousel" class="owl-carousel owl-theme" style="opacity: 1; display: block">
                         <div class="item">
@@ -375,15 +376,15 @@
     </section>
 
 <!-- Follow -->
-    <section class="cointainer-fluid follow-main pb-3" id="follow">
+    <section class="cointainer-fluid follow-main pb-3 mr-0" id="follow">
 
         <div class="row title-follow">
             <div class="col sectors-title-follow">
                 <h1>Follow</h1>
             </div>
         </div>
-        <div class="row justify-content-center justify-content-sm-end py-4 pr-md-5 pt-lg-5">
-            <div class="col col-sm-6 col-lg-5 p-xs-3 form-container">
+        <div class="row justify-content-center justify-content-sm-end py-4 pr-sm-5 pt-lg-5 mt-xl-5">
+            <div class="col col-sm-6 p-xs-3 form-container">
                 <h5 class="text-center text-uppercase pt-3">Subscribe for news</h5>
                 <div class="form">
                     <form>
@@ -402,13 +403,13 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center justify-content-sm-end pt-2 px-md-5 follow-socialmedia">
-            <div class="col col-sm-6 col-lg-5 p-0">
+        <div class="row justify-content-center justify-content-sm-end pt-2 pr-sm-5 follow-socialmedia">
+            <div class="col col-sm-6 p-0 text-center">
                 <h5 class="text-center">Follow Steven Tyler on Social Media</h5>
             </div>
         </div>
-        <div class="row justify-content-center justify-content-sm-end py-1 px-md-5">
-            <div class="col-12 col-sm-6 col-lg-5 socialmedialinks">
+        <div class="row justify-content-center justify-content-sm-end py-1">
+            <div class="d-flex justify-content-center col-12 col-sm-6 pr-sm-5 mr-2 socialmedialinks">
                 <ul class="list-inline-follow social-links-follow">
                     <li class="list-inline-item">
                         <a target="_blank" href="https://www.facebook.com/steventyler/">
