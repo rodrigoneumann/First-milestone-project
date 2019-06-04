@@ -13,6 +13,7 @@ body {
     font-size: 1em;
     font-weight: 400;
     line-height: 1.7;
+    overflow: hidden
 }
 
 p {
@@ -34,7 +35,7 @@ a:focus {
 .sectors-title-white,
 .sectors-title-follow {
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 .sectors-title,
@@ -52,107 +53,72 @@ h1 {
 }
 
 /* -----------------------------------
-    NAVBAR 
-    code model by : https://bootstrapious.com/tutorial/sidebar/index3.html                               
+    SIDEBAR 
+    code model by : https://www.youtube.com/watch?v=IOOtDmh-NZw                              
 -------------------------------------- */
-.navbar {
+
+#content {
+	transition: margin-left 0.4s;
+    overflow: hidden;
+	}
+
+.slide {
+    position: fixed;
+    z-index: 998;
+    margin-top: 3px;
+}
+.slide a {
+	color: rgb(46, 41, 41);
+    font-size: 36px;
     padding: 0 0 0 5px;
     margin-top: 5px;
     margin-left: 12px;
-    position: fixed;
-    z-index: 998;
+}
+.navigation .close {
+	position: absolute;
+	top: 8px;
+    right: 22px;
+    line-height: 1.3;
+	font-size: 30px;
+	color: #ccc;
+}
+.navigation {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #282828;
+	overflow-x: hidden;
+	padding-top: 45px;
+	transition: 0.4s;
 }
 
-
+.navigation a.item {
+	display: flex;
+	flex-direction: row;
+    padding: 18px 30px;
+    font-size: 30px;
+	text-decoration: none;
+	color: #ccc;
+	background-color: #3d3d3d;
+	border-top: 1px solid #ccc;
+}
+.navigation .last {
+	border-bottom: 1px solid #ccc;
+}
+.navigation a.item:hover {
+	color: #fff;
+	background-color: #700000;
+	transition: 0.4s;
+}
+.navigation .icon {
+    padding: 9px 10px 0 0;
+	}
 
 /* -----------------------------------
-    SIDEBAR              
-    code model by : https://bootstrapious.com/tutorial/sidebar/index3.html               
--------------------------------------- */
-
-#sidebar {
-    width: auto;
-    position: fixed;
-    top: -20px;
-    left: -250px;
-    height: 100vh;
-    z-index: 999;
-    background: #443b3b;
-    color: #fff;
-    transition: all 0.3s;
-    overflow-y: scroll;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-}
-
-#sidebar.active {
-    left: 0;
-}
-
-.overlay {
-    display: none;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 998;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-}
-
-.overlay.active {
-    display: block;
-    opacity: 1;
-}
-
-#sidebar ul.components {
-    padding: 20px 0;
-}
-
-#sidebar ul p {
-    color: #fff;
-    padding: 10px;
-}
-
-#sidebar ul li a {
-    text-align: center;
-    padding: 10px;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    display: block;
-}
-
-#sidebar ul li a:hover {
-    color: #700000;
-    background: #fff;
-}
-
-#sidebar ul li.active>a,
-a[aria-expanded="true"] {
-    color: #fff;
-    background: #695b5b;
-}
-
-a[data-toggle="collapse"] {
-    position: relative;
-}
-
-.dropdown-toggle::after {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
-
-ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #220c0c;
-}
-
-
-/* -----------------------------------
-    HEADER
+    HEADER - MOBILE
 -------------------------------------- */
 
 .main-header {
@@ -189,10 +155,10 @@ ul ul a {
 }
 
 /* -----------------------------------
-    SOCIALMEDIA TOP-RIGHT
+    SOCIAL MEDIA TOP-RIGHT
 -------------------------------------- */
 
-.socialmedialinks-top {
+.media-links-top {
     padding: 16px;
     margin: 0;
     position: relative;
@@ -227,7 +193,7 @@ ul ul a {
 
 
 /* -----------------------------------
-    MUSIC
+    MUSIC - MOBILE DISPLAY
 -------------------------------------- */
 
 .music-main {
@@ -237,7 +203,14 @@ ul ul a {
     background-size: cover;
     padding: 0;
     margin: 0;
+}
 
+.music-players-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    margin-bottom: 6vh;
 }
 
 .apple-music {
@@ -264,7 +237,7 @@ img.players:hover {
 }
 
 /* -----------------------------------
-    VIDEOS
+    VIDEOS - MOBILE DISPLAY
 -------------------------------------- */
 
 .videos-main {
@@ -274,9 +247,17 @@ img.players:hover {
     overflow-y: none;
 }
 
+.embed-video-player {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1.5vh;
+}
+
 .carousel-videos {
     padding: 0;
     margin: 0;
+    z-index: 0;
 }
 
 .box-thumbs-videos {
@@ -286,7 +267,7 @@ img.players:hover {
     margin: 0 1px;
 }
 
-.videoYouTube:hover .figure-youtube {
+.video-youtube:hover .figure-youtube {
     -webkit-filter: brightness(120%);
     -webkit-animation-name: pulse;
     -moz-animation-name: pulse;
@@ -335,7 +316,7 @@ img.players:hover {
 
 
 /* -----------------------------------
-    PHOTOS
+    PHOTOS - MOBILE DISPLAY
 -------------------------------------- */
 
 .photos-main {
@@ -373,7 +354,7 @@ img {
 }
 
 /* -----------------------------------
-    FOLLOW
+    FOLLOW - MOBILE DISPLAY
 -------------------------------------- */
 
 .follow-main {
@@ -381,7 +362,13 @@ img {
     background-image: url(../images/bg-follow.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    padding-bottom: 4vh;
     overflow: hidden;
+}
+
+.subscribe-box {
+    justify-content: center;
+    padding: 10px 0 10px 0;
 
 }
 
@@ -399,7 +386,7 @@ img {
     margin: 5px 8px 5px 8px;
 }
 
-.follow-socialmedia h5 {
+.follow-social-media h5 {
     font-size: 1rem;
     text-transform: uppercase;
     color: #fafafa;
@@ -408,11 +395,6 @@ img {
 
 .button-follow {
     margin: 0 8px 0 8px;
-}
- 
-.socialmedialinks {
-    padding: 0;
-    
 }
 
 .social-links-follow {
@@ -442,15 +424,17 @@ img {
 }
 
 /* -----------------------------------
-    FOOTER
+    FOOTER - MOBILE DISPLAY
 -------------------------------------- */
 
 .footer-main {
-    height: 20vh;
+    height: 23vh;
     background-color: #000;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: 0;
+    padding: 10px 0 10px 0;
 }
 
 .steven-logo {
@@ -475,10 +459,10 @@ img {
     MEDIA QUERY
 -------------------------------------- */
 
-/* I have changed this media query for 568px to fit mobile displays with 568px in landscape mode (Iphone 5/SE)  */
 @media (min-width: 568px) {
+    /* I have changed this media query to 568px to fit mobile displays with 568px in landscape mode (Iphone 5/SE)  */
 
-    /* Header */
+    /* ----- HEADER MD DISPLAY SIZE-------- */
     .main-header {
         background-image: url(../images/st-main-large.jpg);
         background-repeat: no-repeat;
@@ -508,18 +492,36 @@ img {
         font-size: 2rem;
     }
 
-    /* Music */
+    /* ----- MUSIC MD DISPLAY SIZE-------- */
     .music-main {
         background-image: url(../images/bg-music-xlg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    /* Follow */
+    .music-players-column {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: transparent;
+    }
+
+    .music-players {
+        margin-left: 13vh;
+        padding: 4vh 0 6vh 0;
+    }
+
+    /* ----- FOLLOW MD DISPLAY SIZE-------- */
     .follow-main {
         background-image: url(../images/bg-follow-lg.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    .subscribe-box {
+        justify-content: flex-end;
+        padding-right: 35px; 
+        
     }
 
     .form-container h5 {
@@ -536,39 +538,29 @@ img {
         width: 40px;
     }
 
-    .follow-socialmedia h5 {
+    .follow-social-media h5 {
         font-size: 0.8rem;
         color: #000;
     }
 
-    /* Footer */
+    /* ----- FOOTER MD DISPLAY SIZE-------- */
     .copyright {
         font-size: 0.8rem;
+    }
+
+    .footer-main {
+        height: 40vh;
     }
 }
 
 @media (max-width: 567px) {
 
-    /* Header */
+    /* ----- RIGHT TOP SOCIAL MEDIA ICONS NO DISPLAY IN SMALL DISPLAYS-------- */
     .right-top-header {
         display: none;
     }
 }
 
-@media (min-width: 581px) {
-
-    /* Header */
-    .header-name {
-        height: 80%;
-    }
-
-    /* Music */
-    .music-players {
-        margin-left: 5vh;
-        padding: 4vh 0 6vh 0;
-    }
-
-}
 
 @media(min-width: 768px) {
 
@@ -585,6 +577,16 @@ img {
 
     }
 
+    /* Music */
+
+    .music-players-column {
+        margin-bottom: 3vh;
+    }
+
+    .music-players {
+        margin-left: 10vh;
+    }
+
     /* Photos */
     .gallery-left,
     .gallery {
@@ -592,7 +594,7 @@ img {
     }
 
     /* Follow */
-    .follow-socialmedia h5 {
+    .follow-social-media h5 {
         font-size: 1rem;
     }
 
@@ -602,73 +604,73 @@ img {
         width: 52px;
     }
 
+}
+
+@media (min-width: 1328px) {
+
+    /* Header */
+    .main-header {
+        height: 100vh;
+        width: 100vw;
+        background-image: url(../images/st-main-xlarge.jpg);
+        background-size: cover;
+    }
+
+    .header-name .container {
+        margin: 10vh 0 0 3.5vw;
+        padding-top: 10vh;
+    }
+
+    .header-name h1 {
+        text-align: left;
+        font-size: 4.5rem;
+        margin-bottom: 0;
+    }
+
+    /* Music */
+    .music-players {
+        margin-left: 20vh;
+        padding: 4vh 0 6vh 0;
+    }
+
+    /* Video */
+
+    .embed-video-player {
+        padding-top: 2.5vh;
+    }
+
+    /* Follow */
+    .follow-main {
+        height: 90vh;
+    }
+
+    .form-container h5 {
+        font-size: 1.4rem;
+    }
+
+    .follow-social-media h5 {
+        font-size: 1.4rem;
+    }
+
+    .social-links-follow li a i {
+        font-size: 50px;
+        height: 80px;
+        width: 80px;
+    }
+
     /* Footer */
     .footer-main {
-        height: 15vh;
+        height: 23vh;
     }
 
+    .steven-logo {
+        height: 100px;
+        width: 79px;
+        background-image: url("../images/steventylerlogo-lg.png");
+        margin-top: 5px;
     }
 
-    @media (min-width: 1328px) {
-
-        /* Header */
-        .main-header {
-            height: 100vh;
-            width: 100vw;
-            background-image: url(../images/st-main-xlarge.jpg);
-            background-size: cover;
-        }
-
-        .header-name .container {
-            margin: 10vh 0 0 3.5vw;
-            padding-top: 10vh;
-        }
-
-        .header-name h1 {
-            text-align: left;
-            font-size: 4.5rem;
-            margin-bottom: 0;
-        }
-
-        /* Music */
-        .music-players {
-            margin-left: 20vh;
-            padding: 4vh 0 6vh 0;
-
-        }
-
-         /* Follow */
-        .follow-main {
-            height: 90vh;
-        }
-
-        .form-container h5 {
-            font-size: 1.4rem;
-        }
-
-        .follow-socialmedia h5 {
-            font-size: 1.4rem;
-        }
-
-        .social-links-follow li a i {
-            font-size: 50px;
-            height: 80px;
-            width: 80px;
-        }
-
-        /* Footer */
-        .footer-main {
-            height: 23vh;
-        }
-
-        .steven-logo {
-            height: 100px;
-            width: 79px;
-            background-image: url("../images/steventylerlogo-lg.png");
-            margin-top: 5px;
-        }
-
-        .copyright {
-            font-size: 1.1rem;
-        }
+    .copyright {
+        font-size: 1.1rem;
     }
+}
