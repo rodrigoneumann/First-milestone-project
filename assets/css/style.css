@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Great Vibes:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Great Vibes:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
 
 
 * {
@@ -35,7 +35,7 @@ a:focus {
 .sectors-title-white,
 .sectors-title-follow {
     margin-top: 30px;
-    margin-left: 50px;
+    margin-left: 52px;
 }
 
 .sectors-title,
@@ -58,64 +58,71 @@ h1 {
 -------------------------------------- */
 
 #content {
-	transition: margin-left 0.4s;
+    transition: margin-left 0.4s;
     overflow: hidden;
-	}
+}
 
 .slide {
     position: fixed;
     z-index: 998;
     margin-top: 3px;
 }
+
 .slide a {
-	color: rgb(46, 41, 41);
+    color: rgb(46, 41, 41);
     font-size: 36px;
     padding: 0 0 0 5px;
     margin-top: 5px;
     margin-left: 12px;
 }
+
 .navigation .close {
-	position: absolute;
-	top: 8px;
+    position: absolute;
+    top: 8px;
     right: 22px;
     line-height: 1.3;
-	font-size: 30px;
-	color: #ccc;
+    font-size: 30px;
+    color: #ccc;
 }
+
 .navigation {
-	height: 100%;
-	width: 0;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: #282828;
-	overflow-x: hidden;
-	padding-top: 45px;
-	transition: 0.4s;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(40, 40, 40, 0.7);
+    overflow-x: hidden;
+    padding-top: 45px;
+    transition: 0.4s;
 }
 
 .navigation a.item {
-	display: flex;
-	flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     padding: 18px 30px;
     font-size: 30px;
-	text-decoration: none;
-	color: #ccc;
-	background-color: #3d3d3d;
-	border-top: 1px solid #ccc;
+    text-decoration: none;
+    color: #ccc;
+    background-color: rgba(61, 61, 61, 0.9);
+    border-top: 1px solid rgb(117, 117, 117);
 }
+
 .navigation .last {
-	border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgb(117, 117, 117);
 }
+
 .navigation a.item:hover {
-	color: #fff;
-	background-color: #700000;
-	transition: 0.4s;
+    color: #fff;
+    background-color: #700000;
+    transition: 0.4s;
 }
+
 .navigation .icon {
     padding: 9px 10px 0 0;
-	}
+}
 
 /* -----------------------------------
     HEADER - MOBILE
@@ -163,7 +170,6 @@ h1 {
     margin: 0;
     position: relative;
     text-align: right;
-
 }
 
 .social-links {
@@ -188,9 +194,7 @@ h1 {
 
 .social-links li a i:hover {
     background: #700000;
-
 }
-
 
 /* -----------------------------------
     MUSIC - MOBILE DISPLAY
@@ -386,6 +390,11 @@ img {
     margin: 5px 8px 5px 8px;
 }
 
+.follow-social-media {
+    justify-content: center;
+    padding-top: 2vh;
+}
+
 .follow-social-media h5 {
     font-size: 1rem;
     text-transform: uppercase;
@@ -396,6 +405,11 @@ img {
 .button-follow {
     margin: 0 8px 0 8px;
 }
+
+.media-links-follow {
+    display: flex;
+    justify-content: center;
+    }
 
 .social-links-follow {
     padding: 0;
@@ -471,6 +485,11 @@ img {
         overflow-y: auto;
     }
 
+    #menu {
+        max-width: 200px !important;
+        /* max width slider menu for md and large screen*/
+    }
+
     .header-name {
         display: flex;
         position: absolute;
@@ -520,8 +539,8 @@ img {
 
     .subscribe-box {
         justify-content: flex-end;
-        padding-right: 35px; 
-        
+        padding-right: 35px;
+
     }
 
     .form-container h5 {
@@ -536,6 +555,15 @@ img {
         font-size: 24px;
         height: 40px;
         width: 40px;
+    }
+
+    .media-links-follow {
+        padding-right: 7vw;
+        }
+
+    .follow-social-media {
+        justify-content: flex-end;
+        padding-right: 4vw;
     }
 
     .follow-social-media h5 {
@@ -594,6 +622,11 @@ img {
     }
 
     /* Follow */
+
+    .subscribe-box {
+        padding-top: 3rem;
+    }
+
     .follow-social-media h5 {
         font-size: 1rem;
     }
@@ -602,6 +635,11 @@ img {
         font-size: 30px;
         height: 52px;
         width: 52px;
+    }
+
+    /* Footer */
+    .footer-main {
+        height: 15vh;
     }
 
 }
@@ -644,8 +682,20 @@ img {
         height: 90vh;
     }
 
+    .subscribe-box {
+        padding-top: 10rem;
+    }
+
+    .media-links-follow {
+        padding-right: 3.5vw;
+        }
+
     .form-container h5 {
         font-size: 1.4rem;
+    }
+
+    .follow-social-media {
+        padding-right: 2vw;
     }
 
     .follow-social-media h5 {
@@ -660,7 +710,7 @@ img {
 
     /* Footer */
     .footer-main {
-        height: 23vh;
+        height: 25vh;
     }
 
     .steven-logo {

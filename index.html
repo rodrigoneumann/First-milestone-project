@@ -32,23 +32,23 @@
 
 <body>
     <!------------------- SIDEBAR --------------------------->
-        <div id="content">
-                <span class="slide">
-                    <a href="#" onclick="openSlideMenu()">
-                        <i class="fas fa-bars"></i>
-                    </a>
-                </span>
-                <div id="menu" class="navigation">
-                    <a href="#" class="close" onclick="closeSlideMenu()">
-                        <i class="fas fa-times"></i>
-                    </a>
-                    <a href="#home" class="item" onclick="closeSlideMenu()"><i class="fas fa-home icon"></i>Home</a>
-                    <a href="#music" class="item" onclick="closeSlideMenu()"><i class="fas fa-music icon"></i>Music</a>
-                    <a href="#videos" class="item" onclick="closeSlideMenu()"><i class="fab fa-youtube icon"></i>Videos</a>
-                    <a href="#photos" class="item" onclick="closeSlideMenu()"><i class="fas fa-camera icon"></i>Photos</a>
-                    <a href="#follow" class="item last" onclick="closeSlideMenu()"><i class="fas fa-at icon"></i>Follow</a>
-                </div>
-            
+    <div id="content">
+        <span class="slide">
+            <a href="#" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </span>
+        <div id="menu" class="navigation">
+            <a href="#" class="close" onclick="closeSlideMenu()">
+                <i class="fas fa-times"></i>
+            </a>
+            <a href="#home" class="item" onclick="closeSlideMenu()"><i class="fas fa-home icon"></i>Home</a>
+            <a href="#music" class="item" onclick="closeSlideMenu()"><i class="fas fa-music icon"></i>Music</a>
+            <a href="#videos" class="item" onclick="closeSlideMenu()"><i class="fab fa-youtube icon"></i>Videos</a>
+            <a href="#photos" class="item" onclick="closeSlideMenu()"><i class="fas fa-camera icon"></i>Photos</a>
+            <a href="#follow" class="item last" onclick="closeSlideMenu()"><i class="fas fa-at icon"></i>Follow</a>
+        </div>
+    </div>
     <!------------------- Header --------------------------->
     <header class="main-header" id="home">
 
@@ -110,8 +110,8 @@
                 <h1>Music</h1>
             </div>
         </div>
+        <!-- Wraper for all the music players in column mode - Center justified for small displays and Left Justified for medium and large displays -->
         <div class="music-players-column">
-            <!-- Wraper for all the music players in column mode - Center justified for small displays and Left Justified for medium and large displays -->
 
             <!-- Responsivity for the players on small, medium and large displays / Links to open the Steven Tyler channels on the players and websites -->
             <div class="col-9 col-sm-4 col-lg-3 music-players ">
@@ -255,7 +255,6 @@
                 </div>
             </div>
         </div>
-
     </section>
 
     <!------------------- Photos Section ------------------->
@@ -366,7 +365,7 @@
                 <h1>Follow</h1>
             </div>
         </div>
-        <div class="row pt-lg-5 mt-xl-5 subscribe-box">
+        <div class="row subscribe-box">
             <div class="col col-sm-6 p-xs-3 form-container">
                 <h5 class="text-center text-uppercase pt-3">Subscribe for news</h5>
                 <div class="form">
@@ -386,13 +385,13 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center justify-content-sm-end pt-2 pr-sm-5 follow-social-media">
+        <div class="row follow-social-media">
             <div class="col col-sm-6 p-0 text-center">
                 <h5 class="text-center">Follow Steven Tyler on Social Media</h5>
             </div>
         </div>
         <div class="row justify-content-center justify-content-sm-end py-1">
-            <div class="d-flex justify-content-center col-12 col-sm-6 pr-sm-5 mr-2 media-links-top">
+            <div class="col-12 col-sm-6 media-links-follow">
                 <ul class="list-inline-follow social-links-follow">
                     <li class="list-inline-item">
                         <a target="_blank" href="https://www.facebook.com/steventyler/">
@@ -440,7 +439,7 @@
             <div class="col copyright text-center">
                 <p>This website is part of my First Milestone project.<br>
                     Code Institute. Studying purposes only.</p>
-                
+
             </div>
         </div>
     </footer>
@@ -463,8 +462,7 @@
     <!-- Sidebar JS -->
     <script>
         function openSlideMenu() {
-            document.getElementById('menu').style.width = '200px';
-            document.getElementById('content').style.marginLeft = '200px';
+            document.getElementById('menu').style.width = '100%';
         }
 
         function closeSlideMenu() {
@@ -531,7 +529,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
-</div>
+
 </body>
 
 </html>
