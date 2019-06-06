@@ -2,6 +2,7 @@
 First Millestone Project: User-Centric Frontend Development - Code Institute 
 
 This is a model for a Steven Tyler website. Steven Tyler is a musician known worldwide for his success with his band Aerosmith.
+
 My idea with this project is to show Steven Tyler in his solo career. I added the singer's main audio media channels, concert videos in solo shows or in partnerships with other musicians and a photo shoot. To conclude I added a sector with social media and a form for an email list for news about the singer.
 This site was thought of those who are fans of Steven Tyler and his work in his solo carrer. 
 
@@ -14,6 +15,7 @@ A live demo can be found [here](https://rodrigoneumann.github.io/First-milestone
 
 ## UX
 *This site was thought to have a clean and minimalist design, valuing much more the artistic and visual side.
+
 *The color scheme was chosen to create a sleek and modern feel. 
 
 
