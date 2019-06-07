@@ -40,7 +40,7 @@ A live demo can be found [here](https://rodrigoneumann.github.io/First-milestone
 
 ## Testing
 *This site was tested across multiple browsers (Chrome, Opera, Safari, Firefox and IE) on https://www.browserling.com (Operational System and version brownser live simulator) and on multiple mobile devices (emulated by development tools by Google Chrome) to ensure compatibility and responsiveness.
-*IE 11 is not fully suported. All the other tested browsers worked properly.
+*IE 11 is not fully suported. most recent versions of the other tested browsers worked properly.
 
 
 ## Deployment
