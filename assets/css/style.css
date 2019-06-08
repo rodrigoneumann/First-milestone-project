@@ -38,7 +38,6 @@ a:focus {
 .sectors-title-white,
 .sectors-title-follow {
     margin-top: 30px;
-    margin-left: 52px;
 }
 
 .sectors-title,
@@ -49,6 +48,7 @@ h1 {
     font-weight: 400;
     letter-spacing: 2px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .sectors-title-white h1 {
@@ -71,9 +71,6 @@ h1 {
     position: fixed;
     z-index: 998;
     margin-top: 3px;
-}
-
-.slide a {
     color: rgb(46, 41, 41);
     font-size: 36px;
     padding: 0 0 0 5px;
@@ -296,7 +293,7 @@ img.players:hover {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding-top: 1.5vh;
+    padding-top: 3vh;
 }
 
 .carousel-videos {
@@ -401,7 +398,7 @@ img {
 -------------------------------------- */
 
 .follow-main {
-    height: auto;
+    height: 80vh;
     background-image: url(../images/bg-follow.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -413,7 +410,7 @@ img {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 10px 0 10px 0;
+    padding: 5vh 0 3vh 0;
 
 }
 
@@ -435,7 +432,7 @@ img {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding-top: 2vh;
+    padding: 4vh 0 2vh 0 ;
 }
 
 .follow-social-media h5 {
@@ -536,6 +533,28 @@ img {
 @media (min-width: 568px) {
     /* I have changed this media query to 568px to fit mobile displays with 568px in landscape mode (Iphone 5/SE)  */
 
+.sectors-title,
+.sectors-title-white,
+.sectors-title-follow {
+    margin: 30px 0 0 65px;
+}
+
+.sectors-title,
+.sectors-title-white,
+.sectors-title-follow,
+h1 {
+
+    font-size: 1.8rem;
+    text-align: start;
+}
+
+.music-main,
+.videos-main,
+.photos-main,
+.follow-main {
+    padding-top: 2vh;
+} 
+
     /* ----- HEADER MD DISPLAY SIZE-------- */
     .main-header {
         background-image: url(../images/st-main-large.jpg);
@@ -543,11 +562,6 @@ img {
         background-position-x: center;
         background-size: cover;
         overflow-y: auto;
-    }
-
-    #menu {
-        max-width: 250px !important;
-        /* max width slider menu for md and large screen*/
     }
 
     .header-name {
@@ -604,6 +618,7 @@ img {
 
     /* ----- FOLLOW MD DISPLAY SIZE-------- */
     .follow-main {
+        height: 100%;
         background-image: url(../images/bg-follow-lg.jpg);
         background-size: cover;
         background-repeat: no-repeat;
@@ -692,12 +707,21 @@ img {
     }
 
     /* Photos */
+
+    .photos-main {
+        padding-bottom: 5vh;
+    }
+
     .gallery-left,
     .gallery {
         padding: 0 15px 3px 15px;
     }
 
     /* Follow */
+
+    .follow-main {
+        height: 85vh;
+    }
 
     .subscribe-box {
         padding-top: 3rem;
@@ -720,7 +744,19 @@ img {
 
 }
 
+@media(width: 812px) {   /* Iphone X in landscape mode */
+    .follow-main {
+        height: 100%;
+}
+
 @media (min-width: 1328px) {
+
+    .music-main,
+    .videos-main,
+    .photos-main,
+    .follow-main {
+        padding-top: 3vh;
+    }
 
     /* Header */
     .main-header {
@@ -742,6 +778,7 @@ img {
     }
 
     /* Music */
+  
     .music-players {
         margin-left: 20vh;
         padding: 4vh 0 6vh 0;
