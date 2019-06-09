@@ -20,21 +20,26 @@ A live demo can be found [here](https://rodrigoneumann.github.io/First-milestone
 
 * The color scheme was chosen to create a sleek and modern feel.
 
+#### Wireframes
+
+* Mobile version [here](https://github.com/rodrigoneumann/First-milestone-project/blob/master/wireframes/mobile.jpeg)
+* MD and LG displays [here](https://github.com/rodrigoneumann/First-milestone-project/blob/master/wireframes/md-lg.jpeg) and [here](https://github.com/rodrigoneumann/First-milestone-project/blob/master/wireframes/md-lg-2.jpeg.jpeg)
+
 ## Technologies
 
 1. HTML
 
 2. CSS3. Bootstrap (4.3.1)
 
-4. OWL Carousel (2.3.4) - Videos section for a better videos organization and view
+3. OWL Carousel (2.3.4) - Videos section for a better videos organization and view
 
-5. Fancybox - Gallery modal pop-up to a better images view
+4. Fancybox - Gallery modal pop-up to a better images view
 
-6. Jquery - For the OWL Carousel funcionalities7. Youtube embed video JS - To play the YouTube videos embed
+5. Jquery - For the OWL Carousel funcionalities7. Youtube embed video JS - To play the YouTube videos embed
 
-8. Javascript - Sidebar
+6. Javascript - Sidebar
 
-9. Autoprefixer CSS - Autoprefixer is a PostCSS plugin which parse the CSS and add vendor prefixes
+7. Autoprefixer CSS - Autoprefixer is a PostCSS plugin which parse the CSS and add vendor prefixes
 
 ## Features
 
