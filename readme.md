@@ -23,7 +23,7 @@ A live demo can be found [here](https://rodrigoneumann.github.io/First-milestone
 #### Wireframes
 
 * Mobile version [here](https://github.com/rodrigoneumann/First-milestone-project/blob/master/wireframes/mobile.jpeg)
-* MD and LG displays [here](https://github.com/rodrigoneumann/First-milestone-project/blob/master/wireframes/md-lg.jpeg) and [here](https://github.com/rodrigoneumann/First-milestone-project/blob/master/wireframes/md-lg-2.jpeg.jpeg)
+* MD and LG displays [here](https://github.com/rodrigoneumann/First-milestone-project/blob/master/wireframes/md-lg.jpeg) and [here](https://github.com/rodrigoneumann/First-milestone-project/blob/master/wireframes/md-lg-2.jpeg)
 
 ## Technologies
 
